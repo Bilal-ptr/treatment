@@ -3,7 +3,7 @@ import React from 'react'
 function Home() {
   return (
     <div className="relative isolate px-6 pt-14 lg:px-8">
-      <div className="bg-cover bg-center h-screen" style={{ backgroundImage: `url('/images/hero.jpg')` }}>
+      <div className="bg-cover bg-center border-2 h-screen" style={{ backgroundImage: `url('./src/assets/images/Logo.png')` }}>
       <div className="container mx-auto px-6 py-24">
         <div className="flex flex-col md:flex-row">
           <div className="flex-1">
@@ -18,7 +18,7 @@ function Home() {
             </button>
           </div>
           <div className="flex-1">
-            <img src="/images/hero-image.png" alt="Hero Image" className="w-full h-auto" />
+            <img src="./src/assets/images/Logo.png" alt="Hero Image" className="w-full h-auto" />
           </div>
         </div>
       </div>

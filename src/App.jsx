@@ -6,6 +6,8 @@ import Treatment from './components/Treatment';
 import About from './components/About';
 import Contact from './components/Contact';
 import Header from './components/Header';
+import Footer from './components/Footer';
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -17,6 +19,7 @@ const App = () => {
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 };
