@@ -2,7 +2,14 @@ import React from 'react'
 
 function About() {
   return (
-    <div>About</div>
+    <div className="relative isolate px-6 pt-32 lg:px-8">
+
+
+
+      About
+      
+      
+      </div>
   )
 }
 
