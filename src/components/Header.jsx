@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className="container fixed w-full ">
       <div className="container mx-auto px-6 py-2 flex justify-between items-center">
-        <h1 className="text-2xl font-bold flex-1 w-25 text-gray-800">
+        <h1 className="">
           <Link to="/">My App</Link>
         </h1>
         <nav>
