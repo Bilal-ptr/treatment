@@ -3,6 +3,26 @@ import React from 'react'
 function Home() {
   return (
     <div className="relative isolate px-6 pt-14 lg:px-8">
+      <div className="bg-cover bg-center h-screen" style={{ backgroundImage: `url('/images/hero.jpg')` }}>
+      <div className="container mx-auto px-6 py-24">
+        <div className="flex flex-col md:flex-row">
+          <div className="flex-1">
+            <h1 className="text-4xl font-bold text-black mb-4">
+              Welcome to My App
+            </h1>
+            <p className="text-xl text-zinc-700 mb-8">
+              This is a simple app built with Vite, React, and Tailwind CSS.
+            </p>
+            <button className="bg-blue-500 text-white py-2 px-4 rounded">
+              Learn More
+            </button>
+          </div>
+          <div className="flex-1">
+            <img src="/images/hero-image.png" alt="Hero Image" className="w-full h-auto" />
+          </div>
+        </div>
+      </div>
+    </div>
     <div
       className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
       aria-hidden="true"
