@@ -1,16 +1,24 @@
-
-import './App.css'
-
-function App() {
-  
-
+// import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './components/Home';
+import Disease from './components/Disease';
+import Treatment from './components/Treatment';
+import About from './components/About';
+import Contact from './components/Contact';
+import Header from './components/Header';
+const App = () => {
   return (
-    <>
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-    </>
-  )
-}
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/Disease" element={<Disease />} />
+        <Route path="/Treatment" element={<Treatment />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
-export default App
+export default App;
